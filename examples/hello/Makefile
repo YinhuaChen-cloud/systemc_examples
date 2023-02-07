@@ -5,10 +5,10 @@ LIB_DIRS=$(SYSTEMC_HOME)/lib-$(SYSTEMC_ARCH)
 INCLUDE_DIRS = -I. -I$(SYSTEMC_HOME)/include 
 
 # header files used. for dependency checking
-HEADERS = hello.h
+HEADERS = $(shell find . -iname "*.h")
 
 # source files used. for dependency checking
-SOURCES = main.cc
+SOURCES = $(shell find . -iname "*.cc")
 
 DEPENDENCIES = \
 	Makefile \
