@@ -1,0 +1,7 @@
+examples/*/*
+!examples/**/Makefile
+!examples/**/*.h
+!examples/**/*.c
+!examples/**/*.cc
+!examples/**/*.cpp
+!examples/**/*.md
