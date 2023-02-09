@@ -55,7 +55,7 @@ struct Initiator: sc_module
       trans->set_data_length( 4 );
       trans->set_streaming_width( 4 ); // = data_length to indicate no streaming
       trans->set_byte_enable_ptr( 0 ); // 0 indicates unused
-      trans->set_dmi_allowed( false ); // Mandatory initial value
+      trans->set_dmi_allowed( false ); // Mandatory initial value // 强制的初始值
       trans->set_response_status( tlm::TLM_INCOMPLETE_RESPONSE ); // Mandatory initial value
 
       // 每个一个delay, 传输一个trans，这个方法调用表示：把trans通过套接字传输
