@@ -8,7 +8,7 @@ INCLUDE_DIRS = -I. -I$(SYSTEMC_HOME)/include
 HEADERS = $(shell find . -iname "*.h")
 
 # source files used. for dependency checking
-SOURCES = $(shell find . -iname "*.cc")
+SOURCES = $(shell find . -iname "*.cc" -or -iname "*.cpp")
 
 DEPENDENCIES = \
 	Makefile \
