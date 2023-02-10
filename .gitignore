@@ -5,3 +5,4 @@ examples/*/*
 !examples/**/*.cc
 !examples/**/*.cpp
 !examples/**/*.md
+.vscode/
